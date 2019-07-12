@@ -1,0 +1,13 @@
+body {
+    padding: 1em 0;
+    text-align: center;
+}
+
+.bg-danger {
+    color: #f56565;
+}
+
+.mx-1 {
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+}
