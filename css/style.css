@@ -11,3 +11,71 @@ body {
     margin-right: 0.25em;
     margin-left: 0.25em;
 }
+
+.player-character {
+    cursor: pointer;
+    margin: 2em 1em;
+    border-bottom: 2px dashed #ccc;
+}
+
+.player-character:hover {
+    transform: scale(1.3);
+}
+
+/* Overlays */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.gameover {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.overlay {
+    padding: 2em;
+    background: #f7fafc;
+    width: 80vw;
+    border-radius: 1em;
+}
+
+.overlay__header {
+    margin: 0;
+    color: #48bb78;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.overlay__button {
+    cursor: pointer;
+    margin-top: 1em;
+    border-radius: 0.25em;
+    padding: 0.75em 2em;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4299e1;
+}
+
+.overlay__button:hover {
+    background-color: #63b3ed;
+}

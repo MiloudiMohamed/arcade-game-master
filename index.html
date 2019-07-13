@@ -13,6 +13,35 @@
         <div>Stars: <span class="table__stars">0</span>/3</div>
         <div>Has protection: <span class="table__protection">False</span></div>
     </div>
+
+    <div class="wrapper">
+        <div class="overlay">
+            <h3 class="overlay__header">Please choose your character:</h3>
+            <div>
+                <img src='images/char-boy.png' data-name="images/char-boy.png" alt="boy.png" class="player-character" >
+                <img src='images/char-cat-girl.png' data-name="images/char-cat-girl.png" alt="cat girl.png" class="player-character" >
+                <img src='images/char-horn-girl.png' data-name="images/char-horn-girl.png" alt="horn girl.png" class="player-character" >
+                <img src='images/char-pink-girl.png' data-name="images/char-pink-girl.png" alt="pink girl.png" class="player-character" >
+                <img src='images/char-princess-girl.png' data-name="images/char-princess-girl.png" alt="princess girl.png" class="player-character" >
+            </div>
+            <button class="overlay__button" onclick="launchGame()">
+                Start Playing
+            </button>
+        </div>
+    </div>
+
+    <div class="gameover">
+        <div class="overlay">
+            <h3 class="overlay__header">Game Over!</h3>
+
+            <p>Your Score: <span class="score">0</span> (High Score: <span class="highscore">12</span>)</p>
+
+            <button class="overlay__button" onclick="restartGame()" autofocus>
+                Play Again!
+            </button>
+        </div>
+    </div>
+
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
