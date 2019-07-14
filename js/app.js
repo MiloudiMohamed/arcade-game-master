@@ -287,6 +287,7 @@ class Game {
     switch (this.supplyType) {
       case 'images/gem-blue.png':
         this.hasProtection = true;
+        this.hasSupplies = false;
         break;
 
       case 'images/gem-green.png':
@@ -294,11 +295,13 @@ class Game {
 
         setTimeout(() => {
           this.freezeEnemies = false;
+          this.hasSupplies = false;
         }, 3000);
         break;
 
       case 'images/gem-orange.png':
         this.superStar = true;
+        this.hasSupplies = false;
         this.y = -999;
         this.stars = 3;
         renderStars();
@@ -306,6 +309,7 @@ class Game {
 
       case 'images/heart.png':
         this.lives++;
+        this.hasSupplies = false;
         renderHeart();
         break;
     }

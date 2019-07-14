@@ -24,7 +24,7 @@ There are four type of supplies:
 **Note:**
 >Your high score at the end of the game will always be stored.
 
-## Credirs
+## Credits
 
 _Font_: [Font Awesome](https://fontawesome.com/)
 
